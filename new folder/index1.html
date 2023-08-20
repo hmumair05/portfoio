@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: #fff;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-brand:hover,
+    .navbar-nav .nav-link:hover {
+      color: #f8f9fa;
+    }
+
+    .jumbotron {
+      background-image: url("path/to/background-image.jpg");
+      background-size: cover;
+      color: #fff;
+      padding: 100px;
+      text-align: center;
+    }
+
+    .jumbotron h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .jumbotron p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .portfolio-section {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+    }
+
+    .portfolio-item {
+      margin-bottom: 30px;
+    }
+
+    .portfolio-item .card {
+      border: none;
+      border-radius: 0;
+      transition: box-shadow 0.3s;
+    }
+
+    .portfolio-item .card:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-item .card img {
+      border-radius: 0;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>My Portfolio</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at massa vitae velit ultrices posuere.</p>
+    </div>
+  </div>
+
+  <section id="about" class="portfolio-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at massa vitae velit ultrices posuere.</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <h2>My Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+          <div class="card">
+            <img src="path/to/image1.jpg" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <div class="card">
+            <img src="path/to/image2.jpg" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <div class="card">
+            <img src="path/to/image3.jpg" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="portfolio-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at massa vitae velit ultrices posuere.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

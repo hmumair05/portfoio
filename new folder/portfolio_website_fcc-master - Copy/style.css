@@ -1,0 +1,196 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('images/home.jpg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+/* Add your custom CSS styles here about page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Additional custom styles */
+  .container {
+    padding-top: 40px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+    .imageWrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .imageAboutPage {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        transition: transform 0.3s ease;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .imageWrapper:hover .imageAboutPage {
+        transform: scale(1.2); /* Increase the size by 20% on hover */
+    }
+  
+  .about-paragraph {
+    line-height: 1.6;
+  }
+  
+  ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  /* Apply animations */
+  #about h1,
+  #about .row > div {
+    opacity: 0;
+  }
+  
+  #about h1 {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  #about .row > div {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1s;
+  }
+  
+  #about .about-paragraph {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.5s;
+  }
+  
+  #about ul {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 2s;
+  }
+  
+  #about p {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 2.5s;
+  }
+  /* Adjust image margins and padding */
+.imageWrapper {
+  margin: 5px auto; /* Center the image and add margin */
+  padding: 0px; /* Add padding around the image */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+/* Enhance paragraph formatting */
+.about-paragraph {
+  line-height: 1.6; /* Adjust line height for better readability */
+  font-family: Arial, sans-serif; /* Use a common sans-serif font */
+  padding: 10px 0; /* Add padding to the top and bottom of the paragraph */
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 767px) { /* Adjust breakpoint based on your design */
+  .row {
+      margin-top: 15px; /* Reduce margin-top for better spacing on smaller screens */
+  }
+  .imageWrapper {
+      margin: 0 auto; /* Remove margin for the image wrapper */
+      padding: 10px; /* Add padding around the image */
+  }
+  .about-paragraph {
+      padding: 10px 0; /* Adjust padding for the paragraph */
+  }
+}
+
+
+  
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
